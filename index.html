@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+	data-theme="light"
+	lang="en"
+>
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -7,6 +10,82 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Donate Bangladesh</title>
+		<!-- daisyUI and tailwindcss -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- custom tailwindcss -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#da373d",
+							donatePrimaryColor: "#B4F461",
+						},
+					},
+				},
+			};
+		</script>
 	</head>
-	<body></body>
+	<body>
+		<header class="bg-[#F9F7F3] pb-5 bg-opacity-80 fixed top-0 w-full">
+			<navbar class="max-w-6xl px-4 mx-auto navbar">
+				<div class="hidden navbar-start lg:flex">
+					<a class="text-xl font-semibold btn btn-ghost bg-donatePrimaryColor"
+						>Blog</a
+					>
+				</div>
+				<div class="navbar-start lg:navbar-center lg:flex lg:justify-center">
+					<div class="dropdown">
+						<div
+							tabindex="0"
+							role="button"
+							class="btn btn-ghost lg:hidden"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-5 h-5"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16"
+								/>
+							</svg>
+						</div>
+						<ul
+							tabindex="0"
+							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+						>
+							<li>
+								<a
+									class="text-xl font-semibold btn btn-ghost bg-donatePrimaryColor"
+									>Blog</a
+								>
+							</li>
+						</ul>
+					</div>
+					<ul class="px-1 menu menu-horizontal">
+						<li class="text-xl font-semibold"><a>Donate Bangladesh</a></li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<p class="text-xl font-semibold text-[#111111B3]">
+						<span>5500</span>TK
+					</p>
+				</div>
+			</navbar>
+		</header>
+		<main class="max-w-6xl px-4 mx-auto mt-28"></main>
+		<footer class="bg-[#F9F7F3] py-20 mt-2"></footer>
+	</body>
 </html>
