@@ -99,7 +99,7 @@
 							alt=""
 						/>
 						<p class="lg:text-xl font-semibold text-lg text-[#111111B3]">
-							<span>5500</span>TK
+							<span id="total-amount">5500</span>TK
 						</p>
 					</div>
 				</div>
@@ -127,7 +127,7 @@
 				<div class="gap-8 p-8 border shadow-xl card lg:card-side bg-base-100">
 					<figure>
 						<img
-							class=""
+							class="w-full lg:w-auto"
 							src="/assets/noakhali.png"
 							alt="Album"
 						/>
@@ -138,10 +138,13 @@
 								src="/assets/coin.png"
 								alt=""
 							/>
-							<span>500</span>
+							<span id="balance-noakhali">500</span>
 							BDT
 						</button>
-						<h2 class="text-xl font-semibold card-title">
+						<h2
+							id="name-noakhali"
+							class="text-xl font-semibold card-title"
+						>
 							Donate for Flood at Noakhali, Bangladesh
 						</h2>
 						<p class="text-[#11111199]">
@@ -157,13 +160,14 @@
 							<input
 								type="text"
 								class="w-full input input-bordered"
-								id=""
+								id="input-noakhali"
 								placeholder="Write Donation Amount"
 							/>
 							<button
+								id="donate-noakhali"
 								class="w-full text-black border-none btn bg-donatePrimaryColor btn-ghost"
 							>
-								Donation
+								Donation Now
 							</button>
 						</div>
 					</div>
@@ -172,7 +176,7 @@
 				<div class="gap-8 p-8 border shadow-xl card lg:card-side bg-base-100">
 					<figure>
 						<img
-							class=""
+							class="w-full lg:w-auto"
 							src="/assets/feni.png"
 							alt="Album"
 						/>
@@ -183,10 +187,13 @@
 								src="/assets/coin.png"
 								alt=""
 							/>
-							<span>800</span>
+							<span id="balance-feni">800</span>
 							BDT
 						</button>
-						<h2 class="text-xl font-semibold card-title">
+						<h2
+							id="name-feni"
+							class="text-xl font-semibold card-title"
+						>
 							Donate for Flood Relief in Feni,Bangladesh
 						</h2>
 						<p class="text-[#11111199]">
@@ -204,13 +211,14 @@
 							<input
 								type="text"
 								class="w-full input input-bordered"
-								id=""
+								id="input-feni"
 								placeholder="Write Donation Amount"
 							/>
 							<button
+								id="donate-feni"
 								class="w-full text-black border-none btn bg-donatePrimaryColor btn-ghost"
 							>
-								Donation
+								Donation Now
 							</button>
 						</div>
 					</div>
@@ -219,7 +227,7 @@
 				<div class="gap-8 p-8 border shadow-xl card lg:card-side bg-base-100">
 					<figure>
 						<img
-							class=""
+							class="w-full lg:w-auto"
 							src="/assets/quota-protest.png"
 							alt="Album"
 						/>
@@ -230,10 +238,13 @@
 								src="/assets/coin.png"
 								alt=""
 							/>
-							<span>1200</span>
+							<span id="balance-quota">1200</span>
 							BDT
 						</button>
-						<h2 class="text-xl font-semibold card-title">
+						<h2
+							id="name-quota"
+							class="text-xl font-semibold card-title"
+						>
 							Aid for Injured in the Quota Movement
 						</h2>
 						<p class="text-[#11111199]">
@@ -252,19 +263,29 @@
 							<input
 								type="text"
 								class="w-full input input-bordered"
-								id=""
+								id="input-quota"
 								placeholder="Write Donation Amount"
 							/>
 							<button
+								id="donate-quota"
 								class="w-full text-black border-none btn bg-donatePrimaryColor btn-ghost"
 							>
-								Donation
+								Donation Now
 							</button>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!--: History container section -->
+			<section
+				class="space-y-8"
+				id="transaction-history"
+			></section>
 		</main>
 		<footer class="bg-[#F9F7F3] py-20 mt-2"></footer>
+
+		<!--: script -->
+		<script src="/js/utilities.js"></script>
+		<script src="/js/index.js"></script>
 	</body>
 </html>
