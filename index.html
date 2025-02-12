@@ -33,59 +33,238 @@
 		</script>
 	</head>
 	<body>
-		<header class="bg-[#F9F7F3] pb-5 bg-opacity-80 fixed top-0 w-full">
-			<navbar class="max-w-6xl px-4 mx-auto navbar">
-				<div class="hidden navbar-start lg:flex">
-					<a class="text-xl font-semibold btn btn-ghost bg-donatePrimaryColor"
-						>Blog</a
-					>
-				</div>
-				<div class="navbar-start lg:navbar-center lg:flex lg:justify-center">
-					<div class="dropdown">
-						<div
-							tabindex="0"
-							role="button"
-							class="btn btn-ghost lg:hidden"
+		<header class="fixed top-0 z-50 w-full border-b border-gray-100">
+			<!--: navbar -->
+			<nav class="bg-[#fff5e0] bg-opacity-90">
+				<div class="max-w-6xl px-4 mx-auto navbar">
+					<div class="hidden navbar-start lg:flex">
+						<a
+							class="text-xl font-semibold border-none btn btn-ghost bg-donatePrimaryColor"
+							>Blog</a
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="w-5 h-5"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
+					</div>
+					<div class="navbar-start lg:navbar-center lg:flex lg:justify-center">
+						<div class="dropdown">
+							<div
+								tabindex="0"
+								role="button"
+								class="btn btn-ghost lg:hidden"
 							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M4 6h16M4 12h8m-8 6h16"
-								/>
-							</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-5 h-5"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M4 6h16M4 12h8m-8 6h16"
+									/>
+								</svg>
+							</div>
+							<ul
+								tabindex="0"
+								class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+							>
+								<li>
+									<a
+										class="text-xl font-semibold border-none btn btn-ghost bg-donatePrimaryColor"
+										>Blog</a
+									>
+								</li>
+							</ul>
 						</div>
-						<ul
-							tabindex="0"
-							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-						>
+						<ul class="px-1 menu menu-horizontal">
 							<li>
 								<a
-									class="text-xl font-semibold btn btn-ghost bg-donatePrimaryColor"
-									>Blog</a
+									class="text-lg font-semibold border-none lg:text-xl btn btn-ghost"
 								>
+									<img
+										src="/assets/logo.png"
+										class="w-10"
+										alt=""
+									/>
+									<span>Donate Bangladesh</span>
+								</a>
 							</li>
 						</ul>
 					</div>
-					<ul class="px-1 menu menu-horizontal">
-						<li class="text-xl font-semibold"><a>Donate Bangladesh</a></li>
-					</ul>
+					<div class="navbar-end">
+						<img
+							src="/assets/coin.png"
+							class="mr-1"
+							alt=""
+						/>
+						<p class="lg:text-xl font-semibold text-lg text-[#111111B3]">
+							<span>5500</span>TK
+						</p>
+					</div>
 				</div>
-				<div class="navbar-end">
-					<p class="text-xl font-semibold text-[#111111B3]">
-						<span>5500</span>TK
-					</p>
-				</div>
-			</navbar>
+			</nav>
+			<!--: functionality button section -->
+			<section
+				class="flex justify-center gap-6 py-10 bg-opacity-90 bg-[#F9F7F3]"
+			>
+				<button
+					class="w-40 text-xl font-semibold border-gray-300 border-none btn btn-ghost bg-donatePrimaryColor"
+				>
+					Donation
+				</button>
+				<button
+					class="w-40 text-xl font-semibold border-gray-300 btn btn-ghost"
+				>
+					History
+				</button>
+			</section>
 		</header>
-		<main class="max-w-6xl px-4 mx-auto mt-28"></main>
+		<main class="max-w-6xl px-4 mx-auto mt-64 mb-20">
+			<!--: donation container section -->
+			<section class="space-y-8">
+				<!-- first card -->
+				<div class="gap-8 p-8 border shadow-xl card lg:card-side bg-base-100">
+					<figure>
+						<img
+							class=""
+							src="/assets/noakhali.png"
+							alt="Album"
+						/>
+					</figure>
+					<div class="p-0 space-y-1 lg:w-1/2 card-body">
+						<button class="w-fit btn">
+							<img
+								src="/assets/coin.png"
+								alt=""
+							/>
+							<span>500</span>
+							BDT
+						</button>
+						<h2 class="text-xl font-semibold card-title">
+							Donate for Flood at Noakhali, Bangladesh
+						</h2>
+						<p class="text-[#11111199]">
+							The recent floods in Noakhali have caused significant damage to
+							homes infrastructure. Your donation will help provide essential
+							supplies and to those affected by this disaster. Every
+							contribution, big or small, makes difference. Please join us in
+							supporting the relief efforts and making a positive impact on the
+							lives of those in need.
+						</p>
+
+						<div class="card-actions">
+							<input
+								type="text"
+								class="w-full input input-bordered"
+								id=""
+								placeholder="Write Donation Amount"
+							/>
+							<button
+								class="w-full text-black border-none btn bg-donatePrimaryColor btn-ghost"
+							>
+								Donation
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- second card -->
+				<div class="gap-8 p-8 border shadow-xl card lg:card-side bg-base-100">
+					<figure>
+						<img
+							class=""
+							src="/assets/feni.png"
+							alt="Album"
+						/>
+					</figure>
+					<div class="p-0 space-y-1 lg:w-1/2 card-body">
+						<button class="w-fit btn">
+							<img
+								src="/assets/coin.png"
+								alt=""
+							/>
+							<span>800</span>
+							BDT
+						</button>
+						<h2 class="text-xl font-semibold card-title">
+							Donate for Flood Relief in Feni,Bangladesh
+						</h2>
+						<p class="text-[#11111199]">
+							The recent floods in Feni have devastated local communities,
+							leading to severe disruption and loss. Your generous donation will
+							help provide immediate aid, including food, clean water, and
+							medical supplies, to those affected by this calamity. Together, we
+							can offer crucial support and help rebuild lives in the aftermath
+							of this disaster. Every contribution counts towards making a real
+							difference. Please consider donating today to assist those in
+							urgent need.
+						</p>
+
+						<div class="card-actions">
+							<input
+								type="text"
+								class="w-full input input-bordered"
+								id=""
+								placeholder="Write Donation Amount"
+							/>
+							<button
+								class="w-full text-black border-none btn bg-donatePrimaryColor btn-ghost"
+							>
+								Donation
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- third card -->
+				<div class="gap-8 p-8 border shadow-xl card lg:card-side bg-base-100">
+					<figure>
+						<img
+							class=""
+							src="/assets/quota-protest.png"
+							alt="Album"
+						/>
+					</figure>
+					<div class="p-0 space-y-1 lg:w-1/2 card-body">
+						<button class="w-fit btn">
+							<img
+								src="/assets/coin.png"
+								alt=""
+							/>
+							<span>1200</span>
+							BDT
+						</button>
+						<h2 class="text-xl font-semibold card-title">
+							Aid for Injured in the Quota Movement
+						</h2>
+						<p class="text-[#11111199]">
+							The recent Quota movement has resulted in numerous injuries and
+							significant hardship for many individuals. Your support is crucial
+							in providing medical assistance, rehabilitation, and necessary
+							supplies to those affected. By contributing, you help ensure that
+							injured individuals receive the care and support they need during
+							this challenging time. Every donation plays a vital role in
+							alleviating their suffering and aiding in their recovery. Please
+							consider making a donation to support these brave individuals in
+							their time of need.
+						</p>
+
+						<div class="card-actions">
+							<input
+								type="text"
+								class="w-full input input-bordered"
+								id=""
+								placeholder="Write Donation Amount"
+							/>
+							<button
+								class="w-full text-black border-none btn bg-donatePrimaryColor btn-ghost"
+							>
+								Donation
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="bg-[#F9F7F3] py-20 mt-2"></footer>
 	</body>
 </html>
