@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html
+	data-theme="light"
+	lang="en"
+>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Donate Bangladesh - Blog</title>
+		<!-- daisyUI and tailwindcss -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- custom tailwindcss -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#da373d",
+							donatePrimaryColor: "#B4F461",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body>
+		<header class="fixed top-0 z-50 w-full border-b border-gray-100">
+			<!--: navbar -->
+			<nav class="bg-[#fff5e0] bg-opacity-90">
+				<div class="max-w-6xl px-4 mx-auto navbar">
+					<div class="hidden navbar-start lg:flex">
+						<a
+							href="index.html"
+							class="text-xl font-semibold border-4 border-transparent hover:border-donatePrimaryColor hover:border-4 btn btn-ghost bg-donatePrimaryColor"
+							>Home</a
+						>
+					</div>
+					<div class="navbar-start lg:navbar-center lg:flex lg:justify-center">
+						<div class="dropdown">
+							<div
+								tabindex="0"
+								role="button"
+								class="btn btn-ghost lg:hidden"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="w-5 h-5"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M4 6h16M4 12h8m-8 6h16"
+									/>
+								</svg>
+							</div>
+							<ul
+								tabindex="0"
+								class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+							>
+								<li>
+									<a
+										href="index.html"
+										class="text-xl font-semibold border-4 border-transparent hover:border-donatePrimaryColor hover:border-4 btn btn-ghost bg-donatePrimaryColor"
+										>Home</a
+									>
+								</li>
+							</ul>
+						</div>
+						<ul class="px-1 menu menu-horizontal">
+							<li>
+								<a
+									href="index.html"
+									class="text-lg font-semibold border-none lg:text-xl btn btn-ghost"
+								>
+									<img
+										src="/assets/logo.png"
+										class="w-10"
+										alt=""
+									/>
+									<span>Donate Bangladesh</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="navbar-end">
+						<img
+							src="/assets/coin.png"
+							class="mr-1"
+							alt=""
+						/>
+						<p class="lg:text-xl font-semibold text-lg text-[#111111B3]">
+							<span id="total-amount">5500</span>TK
+						</p>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="max-w-6xl px-4 mx-auto mt-32 mb-20">
+			<!--: blog section -->
+			<section>
+				<div class="collapse collapse-arrow bg-base-200">
+					<input
+						type="radio"
+						name="my-accordion-2"
+						checked="checked"
+					/>
+					<div class="text-xl font-medium collapse-title">
+						a. What is the Document Object Model (DOM)?
+					</div>
+					<div class="collapse-content">
+						<p>
+							The Document Object Model (DOM) is like a blueprint or map of a
+							webpage. When your browser loads an HTML file, it creates the
+							DOM—a tree-like structure where every element (like paragraphs,
+							images, or buttons) is a node.
+						</p>
+					</div>
+				</div>
+				<div class="collapse collapse-arrow bg-base-200">
+					<input
+						type="radio"
+						name="my-accordion-2"
+					/>
+					<div class="text-xl font-medium collapse-title">
+						b. How do you select an element from the DOM?
+					</div>
+					<div class="collapse-content">
+						<p>
+							Well, there are a few ways to grab an element from the DOM
+							(Document Object Model), depending on what you know about the
+							element. It's like searching for something in a messy room – you
+							can use different strategies. <br />
+							<br />
+							some way : <br />
+							- getElementById() <br />- querySelector() <br />
+							- querySelectorAll()
+						</p>
+					</div>
+				</div>
+				<div class="collapse collapse-arrow bg-base-200">
+					<input
+						type="radio"
+						name="my-accordion-2"
+					/>
+					<div class="text-xl font-medium collapse-title">
+						c. What is event delegation in the context of the DOM, and why is it
+						useful?
+					</div>
+					<div class="collapse-content">
+						<p>
+							Event delegation is a technique where you add one event listener
+							to a parent element to handle events for its child elements
+							instead of adding individual listeners to each child. When an
+							event (like a click) happens on a child element, it "bubbles up"
+							to its parent, and the single listener can check which child
+							triggered the event.
+						</p>
+					</div>
+				</div>
+				<div class="collapse collapse-arrow bg-base-200">
+					<input
+						type="radio"
+						name="my-accordion-2"
+					/>
+					<div class="text-xl font-medium collapse-title">
+						d. How do you manipulate an element's attributes and styles using
+						the DOM?
+					</div>
+					<div class="collapse-content">
+						<p>
+							You can change an element's attributes and styles directly using
+							the DOM API. Here are a few ways to do this <br /><br />
+							- setAttribute() <br />
+							- getAttribute() <br />
+							- removeAttribute()
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="bg-[#F9F7F3] py-20 mt-2"></footer>
+	</body>
+</html>
