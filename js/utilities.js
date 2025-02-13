@@ -20,8 +20,6 @@ function updateBalance(balanceId, nameId, inputId) {
 	const inputNum = inputVal(inputId);
 	const totalBalance = textVal("total-amount");
 
-	console.log(balNum, cardName, inputNum, totalBalance);
-
 	if (isNaN(inputNum) || inputNum <= 0) {
 		alert("Please enter a positive number.");
 		return;
@@ -39,13 +37,15 @@ function updateBalance(balanceId, nameId, inputId) {
 	const transactionHistory = document.getElementById("transaction-history");
 
 	const div = document.createElement("div");
-	div.classList.add("border");
+	div.classList.add("border", "rounded-md", "p-6");
 	div.innerHTML = `
-         <p class="text-xl font-semibold">${inputNum} Taka is Donated for ${cardName}</p>
+         <p class="text-xl font-bold">${inputNum} Taka is Donated for ${cardName}</p>
          <p>Date : ${new Date().toString()}</p>
    `;
 	transactionHistory.appendChild(div);
 
 	// Clear the input field
 	document.getElementById(inputId).value = "";
+
+	my_modal_2.showModal();
 }

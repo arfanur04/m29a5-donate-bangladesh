@@ -116,7 +116,7 @@
 				</button>
 				<button
 					id="show-history"
-					class="w-40 text-xl font-semibold border-4 hover:border-donatePrimaryColor btn btn-ghost border-gray-200"
+					class="w-40 text-xl font-semibold border-4 border-gray-200 hover:border-donatePrimaryColor btn btn-ghost"
 				>
 					History
 				</button>
@@ -138,7 +138,7 @@
 						/>
 					</figure>
 					<div class="p-0 space-y-1 lg:w-1/2 card-body">
-						<button class="w-fit btn">
+						<button class="text-lg font-bold w-fit btn">
 							<img
 								src="/assets/coin.png"
 								alt=""
@@ -187,7 +187,7 @@
 						/>
 					</figure>
 					<div class="p-0 space-y-1 lg:w-1/2 card-body">
-						<button class="w-fit btn">
+						<button class="text-lg font-bold w-fit btn">
 							<img
 								src="/assets/coin.png"
 								alt=""
@@ -238,7 +238,7 @@
 						/>
 					</figure>
 					<div class="p-0 space-y-1 lg:w-1/2 card-body">
-						<button class="w-fit btn">
+						<button class="text-lg font-bold w-fit btn">
 							<img
 								src="/assets/coin.png"
 								alt=""
@@ -283,9 +283,33 @@
 			</section>
 			<!--: History container section -->
 			<section
-				class="hidden space-y-8"
+				class="hidden space-y-6"
 				id="transaction-history"
 			></section>
+			<!-- modal section -->
+				<dialog
+					id="my_modal_2"
+					class="modal"
+				>
+					<div class="space-y-1 text-center modal-box">
+						<h1 class="text-3xl font-bold">Congrats!</h1>
+						<figure class="flex items-center justify-center pt-4">
+							<img
+								src="/assets/coin.png"
+								alt=""
+							/>
+						</figure>
+						<p class="py-4">You Have Donated For Humankind</p>
+						<p class="text-xl font-bold">Successfully</p>
+					</div>
+					<form
+						method="dialog"
+						class="modal-backdrop"
+					>
+						<button>close</button>
+					</form>
+				</dialog>
+			</>
 		</main>
 		<footer class="bg-[#F9F7F3] py-20 mt-2"></footer>
 
