@@ -1,3 +1,11 @@
+function hide_Show_Sec(hidingSecId, showingSecId) {
+	const showingSec = document.getElementById(showingSecId);
+	const hidingSec = document.getElementById(hidingSecId);
+
+	showingSec.classList.remove("hidden");
+	hidingSec.classList.add("hidden");
+}
+
 function inputVal(id) {
 	return parseFloat(document.getElementById(id).value);
 }
